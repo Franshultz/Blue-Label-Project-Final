@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="js/index.js"></script>
+    <title>Blue Label Proyect</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-contenedor-ul">
+            <div class="nav-contenedor-div">
+                <img src="../img/Logo.png" alt="Logo">
+            </div>
+            <li class="menus"><a href="../index.html">INICIO</a></li>
+            <li class="menus"><a href="../paginas/productos.html">PRODUCTOS</a></li>
+            <li class="menus"><a href="../paginas/contacto.html">CONTACTO</a></li>
+            <li class="menus"><a href="../paginas/nosotros.html">NOSOTROS</a></li>
+            <li class="menus"><a href="../backend/templates/productos.html">ADMINISTRACION</a></li>
+            <div class="nav-contenedor-buscador">
+                <img src="../img/iconos/buscar.png" alt="buscador">
+            </div>
+            <div class="nav-contenedor-carrito">
+                <img src="../img/iconos/compra.png" alt="carrito de compras">
+            </div>
+            <div class="menu-hamburguesa" id="menu-hamburguesa">
+                <img src="../img/iconos/menu.png" alt="menu">
+            </div>
+        </ul>
+        <div class="resp-navcontenedormayor">
+            <div class="resp-nav-contenedor-div">
+                <img src="../img/Logo.png" alt="Logo">
+            </div>
+            <button class="hamburguesa"><img src="../img/iconos/menu-regular.png" alt="menu"></button>
+            <ul class="respnavcontenedorul">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../paginas/productos.html">PRODUCTOS</a></li>
+                <li><a href="../paginas/ofertas.html">OFERTAS</a></li>
+                <li><a href="../paginas/contacto.html">CONTACTO</a></li>
+                <li><a href="../paginas/nosotros.html">NOSOTROS</a></li>
+            </ul>
+            <div class="resp-nav-contenedor-buscador">
+                <img src="../img/iconos/buscar.png" alt="">
+            </div>
+            <div class="resp-nav-contenedor-carrito">
+                <img src="../img/iconos/compra.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="div-h1">
+            <h1>BLUE LABEL PROYECT</h1>
+        </div>
+    </header>
+
+    <main class="main-contactos">
+        <div class="contenedor-h2">
+            <h2>Contactanos</h2>
+        </div>
+        <div class="contenedor-form">
+            <form action="" class="form" id="formulario">
+                <fieldset style="border: none;">
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aqui..." id="nombre">
+                        <span id="errorNombre" style="color: red;"></span>
+                    </div>
+                    <div>
+                        <label for="correo">Mail:</label>
+                        <input type="text" name="correo" placeholder="Ingrese su correo aqui..." id="email">
+                        <span id="errorEmail" style="color: red;"></span>
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono: </label>
+                        <input type="tel" name="telefono" placeholder="Ingrese su telefono aqui ...." id="telefono">
+                        <span id="errorTelefono" style="color: red;"></span>
+                    </div>
+                    <div>
+                        <label for="consulta">Consulta:</label>
+                        <textarea name="consulta" rows="10" cols="35" placeholder="Consulte aqui"
+                            id="mensaje"></textarea>
+                        <span id="errorMensaje" style="color: red;"></span>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="contenedor-mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0763969762626!2d-58.40696493043833!3d-34.59643339435008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8fda6d7e9b%3A0x75d41676295b25ec!2sJean%20Jaures%201149%2C%20C1425ESA%20CABA!5e0!3m2!1ses-419!2sar!4v1695942080715!5m2!1ses-419!2sar"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contenedor-info">
+            <div>
+                <img src="../img/iconos/llamada.png" alt="telefono">
+                <p>+541144682867</p>
+            </div>
+            <div>
+                <img src="../img/iconos/email.png" alt="email">
+                <p>bluelabel@gmail.com</p>
+            </div>
+            <div>
+                <img src="../img/iconos/ubicacion.png" alt="ubicacion">
+                <p>Jean Jaures 1149</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-contacto">
+        <div class="footer-up">
+            <div>
+                <img src="../img/imagenes/footer/moneda.png" alt="">
+                <p>Aceptamos varios métodos de pago, incluyendo tarjetas de crédito, débito, PayPal y efectivo. Queremos
+                    que tu experiencia de compra sea lo más conveniente posible, por lo que ofrecemos una gama de
+                    opciones para adaptarnos a tus preferencias.</p>
+            </div>
+            <div>
+                <img src="../img/imagenes/footer/calidad.png" alt="">
+                <p>Nuestro catálogo ofrece bebidas alcohólicas de calidad superior. Desde vinos excepcionales hasta
+                    licores de élite, cada producto cumple con los más altos estándares de calidad. Descubre la
+                    excelencia en cada botella.
+                </p>
+            </div>
+            <div>
+                <img src="../img/imagenes/footer/caja.png" alt="">
+                <p>Desde vinos selectos hasta licores premium, garantizamos que tus pedidos llegarán a tu puerta
+                    puntualmente y en perfectas condiciones. Disfruta de la comodidad de comprar tus bebidas favoritas
+                    desde casa y dejar que nosotros nos ocupemos de la entrega.</p>
+            </div>
+        </div>
+        <div class="footerpadre">
+            <div class="footerhijo">
+                <h4>QUE NO TE FALTE NADA</h4>
+                <ul>
+                    <li>Vinos</li>
+                    <li>Vodka</li>
+                    <li>Whiskies</li>
+                    <li>Jinebra</li>
+                    <li>Aperitivos</li>
+                </ul>
+            </div>
+            <div class="footerhijo">
+                <h4>CONTACTANOS</h4>
+                <div>
+                    <img src="../img/imagenes/footer/whatsapp.png" alt="whatsapp-logo">
+                    <img src="../img/imagenes/footer/facebook.png" alt="facebook-logo">
+                    <img src="../img/imagenes/footer/instagram.png" alt="instagram-logo">
+                </div>
+                <h4>Direccion: calle 505 Buenos Aires</h4>
+                <h4>Telefono:1144682867</h4>
+                <h4>Correo: bluelabel@gmail.com</h4>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/form.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
