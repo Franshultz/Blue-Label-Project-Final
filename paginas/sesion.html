@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Blue Label Proyect</title>
-</head>
-
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Blue Label Proyect</title>
+    </head>
 <body>
     <nav>
         <ul class="nav-contenedor-ul">
@@ -42,7 +40,7 @@
                 <li><a href="../paginas/productos.html">PRODUCTOS</a></li>
                 <li><a href="../paginas/contacto.html">CONTACTO</a></li>
                 <li><a href="../paginas/nosotros.html">NOSOTROS</a></li>
-                <li class="menus"><a href="../paginas/sesion.html">ADMINISTRACION</a></li>
+                <li><a href="../paginas/sesion.html">ADMINISTRACION</a></li>
             </ul>
             <div class="resp-nav-contenedor-buscador">
                 <img src="../img/iconos/buscar.png" alt="">
@@ -58,65 +56,27 @@
         </div>
     </header>
     <main>
-        <div class="main-contenedor-productos">
-            <div class="aside" style="grid-area: aside;">
-                <div class="aside-categorias">
-                    <h3>Categorias</h3>
-                    <ul>
-                        <li><a href=""></a>Vinos</li>
-                        <li><a href=""></a>Cervezas</li>
-                        <li><a href=""></a>Vodkas</li>
-                        <li><a href=""></a>Whiskies</li>
-                        <li><a href=""></a>Aperitivos</li>
-                        <li><a href=""></a>Extras</li>
-                    </ul>
+        <form action="" class="form-sesion form" id="formulario">
+            <fieldset style="border: none;">
+                <div>
+                    <label for="usuario">Usuario: </label>
+                    <input size="30" type="text" name="usuario" placeholder="Ingrese su usuario aqui..." id="usuario">
+                    <span id="errorUsuario" style="color: red;"></span>
                 </div>
-                <div class="aside-filtros">
-                    <h3>Filtrar por:</h3>
-                    <ul>
-                        <li><a href=""></a>Bodega</li>
-                        <li><a href=""></a>Variedad</li>
-                        <li><a href=""></a>Sabores</li>
-                        <li><a href=""></a>Marcas</li>
-                        <li><a href=""></a>Volumen</li>
-                        <li><a href=""></a>Precio</li>
-                    </ul>
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" placeholder="Ingrese su contraseña aqui..." id="password">
+                    <span id="errorPassword" style="color: red;"></span>
                 </div>
-                <div class="aside-ordenar">
-                    <h3>Ordenar por:</h3>
-                    <ul>
-                        <li><a href=""></a>De menor a mayor precio</li>
-                        <li><a href=""></a>De mayor a menor precio</li>
-                        <li><a href=""></a>De A - Z</li>
-                    </ul>
+                <div>
+                    <span id="errorMensaje" style="color: red;"></span>
+                    <span id="administrar"></span>
+                    <input type="submit" value="Log In">
                 </div>
-            </div>
-
-            <!-- Esta parte es la que hace que los productos se agreguen al template -->
-            <template class="producto" id="producto" style="grid-area: template;">
-                <article class="formato-grid">
-                    <img alt="foto" class="formato-img">
-                    <div class="producto-info">
-                        <p class="formato-descr"></p>
-                        <h4 class="formato-precio"></h4>
-                        <button>Comprar</button>
-                    </div>
-                </article>
-            </template>
-            <!-- <article class="producto" style="grid-area: producto5;">
-                <img src="../img/imagenes/productos/SeptimaVinoBlanco.jpg" alt="Septima Vino Blanco Sauvignon 750ml">
-                <div class="producto-info">
-                    <p>Septima Sauvignon 750ml</p>
-                    <h4>$3699</h4>
-                    <button>COMPRAR</button>
-                </div>
-            </article> -->
-
-        </div>
-        <!-- aca termina el template -->
-
+            </fieldset>
+        </form>
     </main>
-    <footer class="footer-productos">
+    <footer class="footer-sesion">
         <div class="footer-up">
             <div>
                 <img src="../img/imagenes/footer/moneda.png" alt="">
@@ -162,8 +122,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/sesion.js"></script>
     <script src="../js/index.js"></script>
-    <script src="../js/cargaProductos.js"></script>
 </body>
-
 </html>

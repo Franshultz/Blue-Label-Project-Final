@@ -94,7 +94,7 @@ nav {
 .div-h1 {
     height: 100%;
     font-size: 2em;
-    background-image: url(../img/imagenes/main/cervezas.jpg);
+    background-image: url(../img/imagenes/header/cervezas.jpg);
     background-size: cover;
     font-family: "Libre Baskerville", serif;
     color: rgba(255, 208, 114, 0.768);
@@ -166,11 +166,8 @@ main {
 .main-contenedor-productos {
     display: grid;
     grid-template-areas:
-        "aside producto1 producto2 producto3 producto4"
-        "aside producto5 producto6 producto7 producto8"
-        "aside producto9 producto10 producto11 producto12";
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 35em 35em;
+        "aside template";
+    grid-template-columns: 20% 80%;
     justify-content: space-around;
     justify-items: center;
     align-items: center;
@@ -214,19 +211,30 @@ main {
 }
 
 .producto {
+    display: grid;
+    grid-template-areas: 
+    "producto0 producto1 producto2 producto3"
+    "producto4 producto5 producto6 producto7"
+    "producto8 producto9 producto10 producto11"
+    "producto12 producto13 producto14 producto15"
+    "producto16 producto17 producto18 producto19"
+    "producto20 producto21 producto22 producto23"
+    ;
+}
+
+.formato-grid{
     font-family: "Libre Baskerville", serif;
     width: max-content;
     background-color: azure;
     border: 0.2em solid black;
     border-radius: 2em;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 3em 0em;
 }
 
-.producto:hover {
+.formato-grid:hover {
     animation: productHover 2s ease-out 0s infinite normal;
 }
 
@@ -280,7 +288,7 @@ footer {
 }
 
 .footer-productos {
-    margin-top: 160em;
+    margin-top: 200em;
 }
 
 .footer-nosotros {
@@ -293,6 +301,10 @@ footer {
 
 .footer-contacto {
     margin-top: 128em;
+}
+
+.footer-sesion{
+    margin-top: 73em;
 }
 
 .footer-up {
@@ -380,7 +392,7 @@ footer {
     align-items: center;
 }
 
-/* ---------------------------------------MAIN-CONTACTOS ----------------------------------*/
+/* ------------------------------------MAIN-CONTACTOS ----------------------------------*/
 
 .main-contactos {
     width: 100%;
@@ -416,6 +428,15 @@ footer {
     grid-area: form;
 }
 
+.form-sesion{
+    background-color: rgb(10, 10, 10);
+    border-radius: 2em;
+    margin: 6em 2em;
+    padding: 2em;
+    display: grid;
+    /* grid-area: form; */
+}
+
 .form fieldset div {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1em;
@@ -428,7 +449,8 @@ footer {
 }
 
 .form div input,
-.form div textarea {
+.form div textarea,
+.form div button {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     padding: 0em 1em;
     font-size: 1em;
@@ -588,21 +610,36 @@ footer {
     }
 
     .footer-productos {
-        margin-top: 200em;
+        margin-top: 238em;
     }
 
     .footer-contacto {
         margin-top: 168em;
     }
 
+    .footer-sesion{
+        margin-top: 73em;
+    }
+
     .main-contenedor-productos {
         grid-template-areas:
-            "aside producto1 producto2 producto3"
-            "aside producto4 producto5 producto6"
-            "aside producto7 producto8 producto9"
-            "aside producto10 producto11 producto12";
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 35em 35em 35em;
+            "aside template";
+        grid-template-columns: 20% 80%;
+        /* grid-template-rows: 35em 35em 35em; */
+    }
+
+    .producto {
+        display: grid;
+        grid-template-areas: 
+        "producto0 producto1 producto2"
+        "producto3 producto4 producto5"
+        "producto6 producto7 producto8"
+        "producto9 producto10 producto11"
+        "producto12 producto13 producto14"
+        "producto15 producto16 producto17"
+        "producto18 producto19 producto20"
+        "producto21 producto22 producto23"
+        ;
     }
 
     .main-contactos {
@@ -801,20 +838,33 @@ footer {
     }
 
     .footer-productos {
-        margin-top: 280em;
+        margin-top: 312em;
     }
 
     .main-contenedor-productos {
         grid-template-areas:
-            "aside aside"
-            "producto1 producto2"
-            "producto3 producto4"
-            "producto5 producto6"
-            "producto7 producto8"
-            "producto9 producto10"
-            "producto11 producto12";
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 15em 35em 35em 35em 35em;
+            "aside"
+            "template";
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: 15em 35em 35em 35em 35em; */
+        }
+
+    .producto {
+        display: grid;
+        grid-template-areas: 
+        "producto0 producto1"
+        "producto2 producto3"
+        "producto4 producto5"
+        "producto6 producto7"
+        "producto8 producto9"
+        "producto10 producto11"
+        "producto12 producto13"
+        "producto14 producto15"
+        "producto16 producto17"
+        "producto18 producto19"
+        "producto20 producto21"
+        "producto22 producto23"
+        ;
     }
 
     .contenedor-nosotros {
