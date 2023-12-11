@@ -231,6 +231,7 @@ main {
     justify-content: space-around;
     align-items: center;
     margin: 3em 0em;
+    display: grid;
 }
 
 .formato-grid:hover {
