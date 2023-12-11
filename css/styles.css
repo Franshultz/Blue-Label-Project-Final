@@ -171,7 +171,7 @@ main {
     justify-content: space-around;
     justify-items: center;
     align-items: center;
-    margin: 10em 0em;
+    margin: 10em 0em 60em;
 }
 
 .aside {
@@ -186,8 +186,7 @@ main {
 }
 
 .aside-categorias,
-.aside-filtros,
-.aside-ordenar {
+.aside-filtros{
     margin: 3em 0em;
 }
 
@@ -288,7 +287,7 @@ footer {
 }
 
 .footer-productos {
-    margin-top: 200em;
+    margin-top: 265em;
 }
 
 .footer-nosotros {
@@ -610,7 +609,7 @@ footer {
     }
 
     .footer-productos {
-        margin-top: 238em;
+        margin-top: 270em;
     }
 
     .footer-contacto {
@@ -838,7 +837,7 @@ footer {
     }
 
     .footer-productos {
-        margin-top: 312em;
+        margin-top: 385em;
     }
 
     .main-contenedor-productos {

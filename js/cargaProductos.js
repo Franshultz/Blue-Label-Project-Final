@@ -13,7 +13,9 @@ function traeProductos(){
         })
 }
 
+
 function tarjetas(data){
+    console.log("Datos recibidos:", data);  // Agrega esta línea para imprimir los datos en la consola
     for(let i=0; i<data.length;i++) { 
         const flex = document.getElementById("producto");
         const template = document.getElementById("producto").content;
@@ -30,3 +32,17 @@ function tarjetas(data){
         flex.appendChild(fragment);
     }   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
