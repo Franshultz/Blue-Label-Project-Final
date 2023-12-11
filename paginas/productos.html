@@ -25,9 +25,16 @@
             <div class="nav-contenedor-buscador">
                 <img src="../img/iconos/buscar.png" alt="buscador">
             </div>
-            <div class="nav-contenedor-carrito">
-                <img src="../img/iconos/compra.png" alt="carrito de compras">
-            </div>
+            <div id="carrito-container" class="nav-contenedor-carrito" onclick="toggleCarrito()">
+                <div class="carrito-items" id="carrito-items">
+                    <div>Total: <span id="total-compra">$0.00</span></div>
+                    <!-- Aquí se mostrarán los productos en el carrito -->
+                    <button onclick="comprar()">Comprar</button>
+                </div>
+                <div id="carrito">
+                    <img src="../img/iconos/compra.png" alt="carrito de compras">
+                </div>
+            </div>          
             <div class="menu-hamburguesa" id="menu-hamburguesa">
                 <img src="../img/iconos/menu.png" alt="menu">
             </div>
@@ -122,8 +129,9 @@
             </div>
         </div>
     </footer>
+    <script src="../js/carrito.js"></script>
     <script src="../js/filtros.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/hamburguesa.js"></script>
     <script src="../js/cargaProductos.js"></script>
 </body>
 

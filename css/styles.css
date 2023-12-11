@@ -83,6 +83,22 @@ nav {
 
 .nav-contenedor-carrito {
     order: 4;
+    cursor: pointer; /* Agregamos un cursor de puntero para indicar que es interactivo */
+}
+
+.carrito-items {
+    width: 25em;
+    display: none;
+    background-color: gold;
+    position: absolute;
+    /* transform: translateY(20em); */
+    transform: translate(-20em, 4em);
+}
+
+.carrito-items div{
+    border: 1px solid black;
+    padding: 1em 1em;
+    font-size: 1.5em;
 }
 
 .nav-contenedor-buscador img,
